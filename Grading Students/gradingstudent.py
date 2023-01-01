@@ -10,4 +10,4 @@ def gradingStudents(grades):
             newGrades.append(grade+2)
         else:
             newGrades.append(grade)
-    return newGrade
+    return newGrades
