@@ -14,9 +14,8 @@ import sys
 #
 
 def countingSort(arr):
-    n = len(arr)
     count = [0] * 100
-    for i in range(0, n):
+    for i in range(0, len(arr)):
         count[arr[i]] += 1
     return count
 
