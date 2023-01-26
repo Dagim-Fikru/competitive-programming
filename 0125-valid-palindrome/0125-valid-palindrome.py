@@ -13,6 +13,7 @@ class Solution:
                 j-=1
             else:
                 return False
+                break
         return True
                 
                 
