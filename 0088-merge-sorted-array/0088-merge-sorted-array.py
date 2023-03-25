@@ -3,6 +3,11 @@ class Solution:
         """
         Do not return anything, modify nums1 in-place instead.
         """
+        # while m>0:
+        #     nums1.pop()
+        #     m-=1
+        # for i in range(n):
+        #     nums1.append(nums2[i])
         arr=[]
         for i in range(m):
             arr.append(nums1[i])
