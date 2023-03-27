@@ -1,13 +1,13 @@
 <h2><a href="https://leetcode.com/problems/roman-to-integer/">13. Roman to Integer</a></h2><h3>Easy</h3><hr><div bis_skin_checked="1"><p>Roman numerals are represented by seven different symbols:&nbsp;<code>I</code>, <code>V</code>, <code>X</code>, <code>L</code>, <code>C</code>, <code>D</code> and <code>M</code>.</p>
 
-<pre><strong>Symbol</strong>       <strong>Value</strong>
+<pre style="position: relative;"><strong>Symbol</strong>       <strong>Value</strong>
 I             1
 V             5
 X             10
 L             50
 C             100
 D             500
-M             1000</pre>
+M             1000<div class="open_grepper_editor" title="Edit &amp; Save To Grepper" bis_skin_checked="1"></div></pre>
 
 <p>For example,&nbsp;<code>2</code> is written as <code>II</code>&nbsp;in Roman numeral, just two ones added together. <code>12</code> is written as&nbsp;<code>XII</code>, which is simply <code>X + II</code>. The number <code>27</code> is written as <code>XXVII</code>, which is <code>XX + V + II</code>.</p>
 
@@ -24,24 +24,24 @@ M             1000</pre>
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
-<pre><strong>Input:</strong> s = "III"
+<pre style="position: relative;"><strong>Input:</strong> s = "III"
 <strong>Output:</strong> 3
 <strong>Explanation:</strong> III = 3.
-</pre>
+<div class="open_grepper_editor" title="Edit &amp; Save To Grepper" bis_skin_checked="1"></div></pre>
 
 <p><strong class="example">Example 2:</strong></p>
 
-<pre><strong>Input:</strong> s = "LVIII"
+<pre style="position: relative;"><strong>Input:</strong> s = "LVIII"
 <strong>Output:</strong> 58
 <strong>Explanation:</strong> L = 50, V= 5, III = 3.
-</pre>
+<div class="open_grepper_editor" title="Edit &amp; Save To Grepper" bis_skin_checked="1"></div></pre>
 
 <p><strong class="example">Example 3:</strong></p>
 
-<pre><strong>Input:</strong> s = "MCMXCIV"
+<pre style="position: relative;"><strong>Input:</strong> s = "MCMXCIV"
 <strong>Output:</strong> 1994
 <strong>Explanation:</strong> M = 1000, CM = 900, XC = 90 and IV = 4.
-</pre>
+<div class="open_grepper_editor" title="Edit &amp; Save To Grepper" bis_skin_checked="1"></div></pre>
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
