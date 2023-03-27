@@ -9,8 +9,8 @@ class Solution:
         arr=[]
         count=0
         for i in nFac:
-            arr.append(i)
-        while arr[-1]=='0':
+            arr.append(int(i))
+        while arr[-1]==0:
             count+=1
             arr.pop()
         return count
