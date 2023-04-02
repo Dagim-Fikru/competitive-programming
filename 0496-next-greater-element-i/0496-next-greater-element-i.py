@@ -12,7 +12,6 @@ class Solution:
                         break
                     elif j==len(nums2)-1:
                         ans.append(-1)
-                    
                     j+=1
         # for i in nums2:
         #     if i in nums1:
