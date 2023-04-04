@@ -1,17 +1,19 @@
 class Solution:
     def partitionString(self, s: str) -> int:
         x=""
-        arr=[]
+        count=1
+        # arr=[]
         for i in s:
             # if s[-1]==i:
             #     arr.append(i)
             if i in x:
-                arr.append(x)
+                count+=1
+                # arr.append(x)
                 x=""
                 x+=i
             else:
                 x+=i
-        arr.append(x)
-        return len(arr)
+        # arr.append(x)
+        return count
         
         
