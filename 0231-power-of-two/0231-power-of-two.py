@@ -6,4 +6,3 @@ class Solution:
             while n>2:
                 n=n/2
             return n==2
-        
