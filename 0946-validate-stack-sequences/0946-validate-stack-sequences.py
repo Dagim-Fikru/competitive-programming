@@ -7,4 +7,4 @@ class Solution:
             while  len(stack) >0 and stack[len(stack)-1] == popped[j] :
                 stack.pop()
                 j+=1
-        return True if len(stack) ==0 else False
+        return len(stack)==0
