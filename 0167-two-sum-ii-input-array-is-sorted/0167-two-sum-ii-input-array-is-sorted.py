@@ -1,6 +1,5 @@
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
-        arr=[]
         i=0
         j=len(numbers)-1
         while i<j:
