@@ -1,5 +1,6 @@
 class Solution:
     def countPrimes(self, n: int) -> int:
+        # i use the Sieve of Eratosthenes algorithm
         prime = [True for i in range(n+1)]
         p = 2
         while p**2 < n:
