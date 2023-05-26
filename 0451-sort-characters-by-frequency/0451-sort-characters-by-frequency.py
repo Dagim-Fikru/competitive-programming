@@ -5,7 +5,7 @@ class Solution:
         s2=""
         for key, value in counter.items():
             arr.append([key,value])
-        sorted_list = sorted(arr, key=lambda x: x[1],reverse=True)
+        sorted_list = sorted(arr, key=lambda x: -x[1])
         for i in range(len(arr)):
             while sorted_list[i][1]>0:
                 s2+=sorted_list[i][0]
