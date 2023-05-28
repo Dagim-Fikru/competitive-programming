@@ -1,10 +1,12 @@
 class Solution:
     def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
-        count = [0]*len(nums)
+        newList = list(((nums)))
+        newList.sort()
+        arr=[]
+        HashMap = {}
+        for i in range(len(newList)):
+            if newList[i] not in HashMap:
+                HashMap[newList[i]]=i
         for i in range(len(nums)):
-            for j in range(0,len(nums)):
-                if nums[i]==nums[j]:
-                    continue
-                elif nums[i]>nums[j]:
-                    count[i]+=1
-        return count
+            arr.append(HashMap[nums[i]])
+        return arr
