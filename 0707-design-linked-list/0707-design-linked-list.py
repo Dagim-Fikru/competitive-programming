@@ -2,7 +2,6 @@ class Node:
     def __init__(self, val):
         self.val = val
         self.next = None
-
 class MyLinkedList:
     def __init__(self):
         self.head = None
