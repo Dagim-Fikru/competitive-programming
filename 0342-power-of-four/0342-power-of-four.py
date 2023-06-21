@@ -11,6 +11,6 @@ class Solution:
         elif n == 1:
             return True
         elif n % 4 == 0:
-            return self.isPowerOfFour(n // 4)
+            return self.isPowerOfFour(n / 4)
         else:
             return False
