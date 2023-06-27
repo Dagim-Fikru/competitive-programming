@@ -5,18 +5,6 @@
 #         self.next = next
 class Solution:
     def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-        # def list_to_linked_list(lst):
-        #     head2 = None
-        #     tail = None
-        #     for value in lst:
-        #         node = ListNode(value)
-        #         if tail is None:
-        #             head2 = node
-        #             tail = node
-        #         else:
-        #             tail.next = node
-        #             tail = node
-        #     return head2
         arr=[]
         while head:
             arr.append(head.val)
