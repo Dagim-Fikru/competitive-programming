@@ -6,8 +6,7 @@ class Solution:
         for i in y:
             arr.append(i)
         if arr[-1]=='-':
-            arr.pop()
-            arr.insert(0,'-')
+            arr.insert(0,arr.pop())
         y=int(''.join(arr))
         if y<=-2**31 or y>=(2**31)-1:
             return 0
