@@ -7,7 +7,7 @@ class Solution:
                 b-=1
             elif a**2 + b**2<c:
                 a+=1
-            elif a**2 + b**2==c:
+            else:
                 return True
         return False
             
