@@ -1,18 +1,16 @@
 class Solution:
     def dividePlayers(self, skill: List[int]) -> int:
         skill.sort()
-        arr=[]
-        i=0
-        j=len(skill)-1
+        chemistry = skill[0]*skill[-1]
+        target = skill[0] + skill[-1]
+        i=1
+        j=len(skill)-2
+        
         while i<j:
-            arr.append([skill[i],skill[j]])
+            if skill[i]+skill[j]!=target:
+                return -1
+            chemistry+=skill[i]*skill[j]
             i+=1
             j-=1
-        chemistry = arr[0][0] * arr[0][1]
-        for i in range(1,len(arr)):
-            if arr[0][0]+arr[0][1]==arr[i][0]+arr[i][1]:
-                chemistry = chemistry + (arr[i][0] * arr[i][1])
-            else:
-                return -1
         return chemistry
             
