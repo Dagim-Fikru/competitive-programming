@@ -1,16 +1,15 @@
 class OrderedStream:
 
     def __init__(self, n: int):
-        self.arr= []
-        self.ptr =1
+        self.arr= [None]*(n+1)
+        self.ptr =0
     def insert(self, idKey: int, value: str) -> List[str]:
         self.ans = []
-        self.arr.append([idKey,value])
-        self.arr.sort()
-        for i in range(len(self.arr)):
-            if self.arr[i][0]== self.ptr:
-                self.ans.append(self.arr[i][1])
-                self.ptr+=1
+        self.arr[idKey-1] = value
+        while self.arr[self.ptr]!=None and self.ptr<len(self.arr)-1:
+            self.ans.append(self.arr[self.ptr])
+            self.ptr+=1
+        # print(self.arr)
         return self.ans
 
 
