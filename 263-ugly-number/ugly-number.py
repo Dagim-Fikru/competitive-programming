@@ -2,7 +2,7 @@ class Solution:
     def isUgly(self, n: int) -> bool:
         if n==1:
             return True
-        elif n==0 or n<0:
+        elif n<=0:
             return False
         else:
             while n>1:
