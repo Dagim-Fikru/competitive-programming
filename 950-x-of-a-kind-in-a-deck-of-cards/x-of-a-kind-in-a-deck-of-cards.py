@@ -3,7 +3,6 @@ class Solution:
     def hasGroupsSizeX(self, deck: List[int]) -> bool:
         arr = []
         Count = Counter(deck)
-        ans = math.gcd()
         for key,value in Count.items():
             arr.append(value)
         check = np.array(arr)
