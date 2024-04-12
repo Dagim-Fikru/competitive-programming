@@ -7,11 +7,11 @@
 class Solution:
     def isUnivalTree(self, root: Optional[TreeNode]) -> bool:
         newRoot = root.val
-        def dfs(node):
+        def traverse(node):
             if not node:
                 return True
             elif node.val!=newRoot:
                 return False
             else:
-                return dfs(node.left) and dfs(node.right)
-        return dfs(root)
+                return traverse(node.left) and traverse(node.right)
+        return traverse(root)
