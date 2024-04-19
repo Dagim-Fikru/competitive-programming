@@ -7,7 +7,7 @@ class Solution:
                 difference.append(0)
             else:
                 difference.append(abs(diff))
-        print(difference)
+        # print(difference)
         heap = []
         i=0
         while ladders>0 and i<len(difference):
